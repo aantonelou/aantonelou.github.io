@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anastasia Antonelou</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="header_template"></div>
+
+<section id="features">
+    <div class="container">
+        <h1>Anastasia Antonelou</h1>
+        <h4 style="text-align: center;">Welcome to my slice of the Internet</h4>
+    </div>
+
+    <div>
+        <header>
+            <h2 style="text-align: center">About me</h2>
+        </header>
+    </div>
+
+    <div class="content-container">
+        <img src="images/anastasia_antonelou.jpg" class="content-image">
+        <p class="content-text">I'm Anastasia, a passionate software engineer with a solid foundation in informatics, holding a bachelor's degree and
+            currently testing my mettle in a Master's degree in Data Science and Information Technology.<br>
+            Throughout my journey in the world of technology, I acquired and enhanced significant skills in full-stack web development and database management.
+            I pride myself on my analytical and problem-solving skills, my adaptability and an eagle eye for details
+            that ensure my code is not just functional but flawless.<br>
+            When the screens go dark, you'll likely find me striking a pose in Pilates, embarking on a marathon of the latest TV shows
+            or strolling around the city, savoring some delicious food and wine.</p>
+    </div>
+
+</section>
+
+<div id="footer_template"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(function(){
+        $("#header_template").load("header.html");
+        $("#footer_template").load("footer.html");
+    });
+</script>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

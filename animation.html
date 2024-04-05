@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Anastasia Antonelou</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="header_template"></div>
+
+<section id="features">
+    <div>
+        <header>
+            <h2 style="text-align: center">SVG Animation</h2>
+        </header>
+    </div>
+
+    <div class="svg-container">
+        <p class="svg-text">Click in order to make the shape disappear</p>
+        <svg width="500" height="200">
+            <circle id="circle_1" cx="50" cy="100" r="40" fill="darkmagenta" class="animate"/>
+            <rect id="rectangle_1" x="150" y="60" width="80" height="80" fill="lightcoral" class="animate"/>
+            <polygon id="triangle_1" points="300,140 350,60 400,140" fill="palevioletred" class="animate"/>
+        </svg>
+    </div>
+
+    <div class="svg-container">
+        <p class="svg-text">Click in order to make the shape freeze</p>
+        <svg width="500" height="200">
+            <circle id="circle_2" cx="50" cy="100" r="40" fill="darkmagenta" class="animate"/>
+            <rect id="rectangle_2" x="150" y="60" width="80" height="80" fill="lightcoral" class="animate"/>
+            <polygon id="triangle_2" points="300,140 350,60 400,140" fill="palevioletred" class="animate"/>
+        </svg>
+    </div>
+
+    <div class="svg-container">
+        <p class="svg-text">Click in order to make the shape change colour</p>
+        <svg width="500" height="200">
+            <circle id="circle_3" cx="50" cy="100" r="40" fill="darkmagenta" class="animate"/>
+            <rect id="rectangle_3" x="150" y="60" width="80" height="80" fill="lightcoral" class="animate"/>
+            <polygon id="triangle_3" points="300,140 350,60 400,140" fill="palevioletred" class="animate"/>
+        </svg>
+    </div>
+
+</section>
+
+<div id="footer_template"></div>
+
+<style>
+    .animate {
+        animation: moveShapes 5s infinite alternate;
+    }
+
+    @keyframes moveShapes {
+        0%, 100% {
+            transform: translateX(0px);
+        }
+        50% {
+            transform: translateX(100px);
+        }
+    }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(function(){
+        $("#header_template").load("header.html");
+        $("#footer_template").load("footer.html");
+    });
+</script>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

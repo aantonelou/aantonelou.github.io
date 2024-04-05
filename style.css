@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700");
+
+body {
+    background: #f0f0f0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    color: #777;
+    line-height: 1.65em;
+    font-size: 14pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #888;
+}
+
+h2 {
+    font-size: 1.65em;
+    font-weight: 400;
+    letter-spacing: 4px;
+    line-height: 1.75em;
+    text-align: center;
+}
+
+/* Header Styles */
+#header {
+    background: #fff;
+    text-align: center;
+}
+
+#features h1 {
+    font-family: 'Arvo', serif;
+    color: #ed786a;
+    font-size: 3em;
+    letter-spacing: 13px;
+    text-align: center;
+}
+
+#header p {
+    text-transform: uppercase;
+    color: #888;
+    font-size: 0.85em;
+    letter-spacing: 3px;
+}
+
+/* Navigation Styles */
+#nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Center navigation links */
+}
+
+#nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Adjust spacing between navigation links */
+}
+
+#nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #777;
+    font-size: 0.85em;
+    letter-spacing: 3px;
+}
+
+#nav ul li a:hover, #nav ul li a:active {
+    color: #ED786A;
+}
+
+/* Features Section */
+#features {
+    padding: 2em 0;
+    background: #fff;
+}
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 800px;
+    gap: 20px;
+}
+
+.content-image {
+    width: 50%;
+    max-width: 400px;
+    height: auto;
+}
+
+.content-text {
+    width: 50%;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#circle_1, #rectangle_1, #triangle_1 {
+    cursor: pointer;
+}
+
+#circle_2, #rectangle_2, #triangle_2 {
+    cursor: pointer;
+}
+
+#circle_3, #rectangle_3, #triangle_3 {
+    cursor: pointer;
+}
+
+.svg-container {
+    border: 2px solid #cbbfbf;
+    margin: 30px auto;
+    display: block;
+    background-color: #f9f9f9;
+    text-align: center;
+    width: 1000px;
+}
+
+.svg-text {
+    color: #888;
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+}
+
+.content-image-big {
+    width: 100%;
+    max-width: 1000px;
+    height: fit-content;
+}
+
+.content-text-big {
+    width: 100%;
+}

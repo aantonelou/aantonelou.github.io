@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Anastasia Antonelou</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="header_template"></div>
+
+<section id="features">
+  <div>
+    <header>
+      <h2 style="text-align: center">Data-driven visualization image</h2>
+    </header>
+  </div>
+
+  <div class="info-container">
+    <img src="images/disney_screenplay_dialogue.jpg" class="content-image-big">
+
+    <p class="content-text-big">In this image, Hanah Anderson and Matt Daniels visualize gender disparity in pop culture by breaking down the scripts of some of the
+      biggest movies in cinema history, Disney movies.<br> This chart, despite its simplicity, grabs your attention by showing the significant difference in dialogue
+      between men and women in movies. It's easy to notice the lack of female-led narratives and the imbalance between genders, even in movies where the lead role is a woman, such as "Pocahontas" or "Mulan".
+      The actual numbers, laid out in bold colors, confront us with a reality that's not immediately obvious just by watching the films.
+      By focusing on the biggest box office hits, the visualization highlights how even the most popular movies have not given women equal time to speak.
+      This graph is a straightforward but impactful reminder to consider who is heard in the stories we've grown up with, particularly in older movies,
+      and how that's starting to change.</p>
+  </div>
+
+</section>
+
+<div id="footer_template"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+  $(function(){
+    $("#header_template").load("header.html");
+    $("#footer_template").load("footer.html");
+  });
+</script>
+
+</body>
+</html>

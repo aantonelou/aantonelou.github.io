@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Anastasia Antonelou</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="header_template"></div>
+
+<section id="features">
+    <div class="container">
+        <section>
+            <h2>Credits</h2>
+            <p>My website is built using HTML5, CSS, Javascript and jQuery and also with the resources provided by the following:</p>
+            <ul>
+                <li>Fonts provided by <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+                <li>SVG animation <a href="https://johndecember.com/html/spec/colorsvg.html" target="_blank">colors</a></li>
+                <li>Data-driven visualization <a href="https://pudding.cool/2017/03/film-dialogue/" target="_blank">image</a> provided by Hanah Anderson and Matt Daniels</li>
+            </ul>
+        </section>
+    </div>
+
+</section>
+
+<div id="footer_template"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(function(){
+        $("#header_template").load("header.html");
+        $("#footer_template").load("footer.html");
+    });
+</script>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
