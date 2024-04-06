@@ -35,6 +35,7 @@ h2 {
     font-size: 3em;
     letter-spacing: 13px;
     text-align: center;
+    line-height: 50px;
 }
 
 #header p {
@@ -48,12 +49,12 @@ h2 {
 #nav ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Center navigation links */
+    text-align: center;
 }
 
 #nav ul li {
     display: inline-block;
-    margin: 0 10px; /* Adjust spacing between navigation links */
+    margin: 0 10px;
 }
 
 #nav ul li a {
@@ -117,7 +118,8 @@ footer {
     display: block;
     background-color: #f9f9f9;
     text-align: center;
-    width: 1000px;
+    width: 60%;
+    overflow: hidden;
 }
 
 .svg-text {
@@ -127,14 +129,34 @@ footer {
 .info-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .content-image-big {
-    width: 100%;
-    max-width: 1000px;
+    width: 70%;
+    max-width: 70%;
     height: fit-content;
+    margin: 0 auto;
+    display: block;
 }
 
 .content-text-big {
     width: 100%;
+}
+
+a {
+    color: #ed786a;
+}
+
+/* Hover state of the link */
+a:hover {
+    color: #db5c53;
+}
+
+a:active {
+    color: #c44d42;
+}
+
+a:visited {
+    color: #b74339;
 }
